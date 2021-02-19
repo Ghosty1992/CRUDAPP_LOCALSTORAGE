@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: rgba(125, 100, 128, 1);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 50;
+  margin: 1rem 0 3rem;
+  text-align: center;
+  font-family: Calibri;
+  color: #fff;
+}
+
+.styling {
+  font-weight: 800;
+  color: lime;
+}
+
+.form-div,
+.input_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.myForm .input {
+  padding: 0.5rem 1rem;
+  height: 50px;
+  outline: none;
+  background-color: #fff;
+  width: 450px;
+  border: none;
+  font-size: 1.15rem;
+  margin: 0.25rem;
+  border-radius: 25px;
+}
+
+.addTask {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: #fff;
+  margin: 0.25rem;
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.addTask:hover {
+  opacity: 0.7;
+}
+
+.saveTask {
+  display: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: #fff;
+  margin: 0.25rem;
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.saveTask:hover {
+  opacity: 0.7;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.table-output {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 640px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  border: 1px solid transparent;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+th {
+  background: #dfdfdf;
+  font-weight: bold;
+}
+
+td {
+  background: #fafafa;
+  text-align: center;
+}
+
+.editButton {
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  font-family: "Hind", sans-serif;
+  background: none;
+  outline: none;
+  color: lime;
+  border: none;
+  cursor: pointer;
+}
+
+.removeButton {
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  font-family: "Hind", sans-serif;
+  background: none;
+  outline: none;
+  color: #e00;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .myForm .input {
+    width: 10rem;
+    height: 2rem;
+  }
+  .table-output {
+    padding: 250px;
+    width: 5rem;
+    height: 1rem;
+  }
+  .editButton {
+    font-size: 1rem;
+    margin: 0 0.2rem;
+  }
+  .removeButton {
+    font-size: 1rem;
+    margin: 0 0.2rem;
+  }
+}
